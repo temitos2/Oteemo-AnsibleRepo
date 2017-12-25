@@ -1,0 +1,4 @@
+---
+  - name: patch all servers
+    apt: update_cache=yes
+

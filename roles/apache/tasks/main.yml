@@ -1,0 +1,11 @@
+---
+  - name: Install apache, php, git package
+    apt: name={{ item }} state=present
+    with_items:
+    - apache2
+    - php5
+    - git
+
+  - name: install Hello World PHP script
+    copy: src=index.php dest=/var/www/html/index.php mode=0664
+

@@ -1,0 +1,22 @@
+---
+  - name:  patching all servers
+    hosts: webservers
+    become: yes
+
+    roles:
+    - common
+
+  - name: configure and deploy webservers
+    hosts: webservers
+    become: yes
+
+    roles:
+    - apache
+
+  - name: install mysql
+    hosts: webservers
+    become: yes
+
+    roles:
+    - mysql
+
