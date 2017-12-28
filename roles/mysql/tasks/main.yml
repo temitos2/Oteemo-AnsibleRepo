@@ -5,8 +5,8 @@
     - mariadb-server
  
   - name: Create database user
-    mysql_user: user=oteemo password=12345 priv=*.*:ALL state=present
+    mysql_user: user=oteemo password=Ch@ng3m3! priv=*.*:ALL state=present
 
   - name: Create database
-    mysql_db: db=Temidata state=present
+    mysql_db: db=Ch@ng3m3! state=present
 

@@ -3,8 +3,8 @@
     apt: name={{ item }} state=present
     with_items:
     - apache2
-    - php5
     - git
+    - php
 
   - name: install Hello World PHP script
     copy: src=index.php dest=/var/www/html/index.php mode=0664
